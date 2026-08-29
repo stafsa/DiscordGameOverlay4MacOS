@@ -10,7 +10,7 @@ Next, you'll need to build it using the following command:
 clang -dynamiclib -fobjc-arc -framework Cocoa -framework ApplicationServices -framework Carbon main.m
   -o a.dylib
 ```
-Once it's built, you need to install insert_dylib from **[![insert_dylib] (https://github.com/stafsa/DiscordGameOverlay4MacOS/releases/download/helper_tools/insert_dylib)** and 
+Once it's built, you need to install insert_dylib from **[[insert_dylib] (https://github.com/stafsa/DiscordGameOverlay4MacOS/releases/download/helper_tools/insert_dylib)** and 
 go to where it is in your terminal, and run
 ```bash
 ./insert_dylib a.dylib <the game you want the game overlay on, the binary tho>
