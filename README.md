@@ -21,3 +21,6 @@ codesign -s - -f a.dylib
 codesign -s - -f <the game binary>
 ```
 andd you should be fine.Be careful as anti-cheats may detect and ban you.
+
+# Tags
+Discord Overlay MacOS, Discord Game Overlay MacOS, Overlay, Discord Overlay Mac
