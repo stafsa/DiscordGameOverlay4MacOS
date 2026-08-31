@@ -127,8 +127,7 @@ def executable_path_for_pid(pid):
     except (OSError, UnicodeDecodeError):
         pass
 
-    # Fallback for environments without libproc. On CrossOver this can be a
-    # Windows command line rather than a signable macOS executable.
+    #Fallback for environments without libproc
     process = subprocess.run(
         ["ps", "-p", str(pid), "-o", "comm="],
         text=True,
