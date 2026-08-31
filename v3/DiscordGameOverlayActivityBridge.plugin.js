@@ -1,7 +1,7 @@
 /**
  * @name DiscordGameOverlayActivityBridge
  * @author stafsa
- * @version 0.2.0
+ * @version 0.1.0
  * @description Sends Discord's detected running games to the local Discord overlay bridge.
  */
 
@@ -69,10 +69,10 @@ module.exports = class DiscordGameOverlayActivityBridge {
             settings: [{
                 id: "excludedGames",
                 name: "Excluded games",
-                note: "Comma or line separated game names or application IDs. Excluded games are never sent to localhost:7999.",
+                note: "Comma or line separated game names or application IDs. Excluded games are never sent to the backend.",
                 type: "text",
                 value: this.settings.excludedGames.join(", "),
-                placeholder: "Example: Roblox, Minecraft"
+                placeholder: "Example: Minecraft, Roblox"
             }],
             onChange: (_, id, value) => {
                 if (id === "excludedGames") this.setExcludedGames(value);
