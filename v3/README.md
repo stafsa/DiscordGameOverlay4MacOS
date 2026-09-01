@@ -10,7 +10,7 @@ codesign -d --entitlements - --xml the.game.you.want.the.overlay.on >> /tmp/enti
 ```
 and then, you should add the get-task-allow entitlement with
 ```bash
-plutil -insert "com.apple.security.get-task-allow" -bool true /tmp/entitlementsss.plist
+/usr/libexec/PlistBuddy -c "Add :com.apple.security.get-task-allow bool true" /tmp/entitlementsss.plist
 ```
 and then, you can resign the binary using
 ```bash
